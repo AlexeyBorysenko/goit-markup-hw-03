@@ -49,6 +49,8 @@ body {
 }
 .header-container {
   display: flex;
+  border-bottom: 1px solid #ECECEC;
+
 }
 .header-nav {
   display: flex;
@@ -130,13 +132,15 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--titel-hero-button);
-margin-right: auto;
-padding: 200px 0px 30px 0px;
+margin-right: 0 auto;
+margin-bottom: 30px;
 }
 .hero {
   background-color: var(--background-color);
-  height: 600px;
-   }
+  max-width: 1600;  
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .modal-button {
 border-radius: 4px;
 font-family: inherit;
@@ -152,6 +156,8 @@ background: var(--bacground-button);
 padding: 10px 32px;
 margin-right: auto;
 margin-left: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -161,8 +167,17 @@ margin-left: auto;
 /* advantages */
 .advantages {
   display: flex;
-  margin: 94px 94px;
-}
+   }
+   .section-advantages {
+     padding-top: 94px;
+     padding-bottom: 94px;
+   }
+   .advantages-list:not(:last-child) {
+     margin-right: 30px;
+  }
+  .advantages-list {
+    width: 270px;
+  }
 .advantages-titel {
 font-weight: 700;
 font-size: 14px;
@@ -202,25 +217,48 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 /* job  */
-.job {
-  margin-bottom: 50px;
+.section-job {
+  padding-bottom: 94px;
+}
+
+.job-list-item:not(:last-child) {
+ margin-right: 30px;
 }
 .job-list{
   display: flex;
   }
-  .job-list-img {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-.job, .team-titel {
+  .job, .team-titel {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
+
 }
 /* team */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+}
+.team-list-item {
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:not(:last-child) {
+margin-right: 30px;
+}
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
 .team-name {
 font-weight: 500;
 font-size: 16px;
@@ -228,6 +266,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 10px;
 }
 .position {
 font-weight: 400;
@@ -250,6 +289,10 @@ color: #FFFFFF;
 }
 .footer {
   background: var(--background-color);
+  padding: 60px 0px;
+}
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-list-address {
 font-weight: 400;
@@ -257,6 +300,10 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+}
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-link-mail {
 font-weight: 400;
@@ -273,6 +320,16 @@ letter-spacing: 0.03em;
 color: #FFFFFF99;
 }
 /* Портфолио */
+.portfolio-btn {
+display: flex;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.portfolio-list-s {
+  display: flex;
+  flex-wrap: wrap;
+}
 .modal-button-portfolio {
 font-weight: 500;
 font-size: 16px;
